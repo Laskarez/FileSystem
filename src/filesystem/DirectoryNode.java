@@ -14,18 +14,23 @@ import java.util.ArrayList;
  */
 public class DirectoryNode extends Node{
     
-    private ArrayList<Node> childs;
+    private ArrayList<Node> childs = new ArrayList<>();
 
-    public DirectoryNode(String pName, int pKey) {
-        super(pName, pKey);
+    public DirectoryNode(String pName, int pKey,ArrayList<Integer> pSectors) {
+        super(pName, pKey, pSectors);
+
     }
     
     public void addChild(Node child){
         childs.add(child);
     }
-    
+
     public Node getChildIndex(int index){
         return childs.get(index);
+    }
+
+    public ArrayList<Node> getChilds(){
+        return childs;
     }
     
 }
