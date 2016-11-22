@@ -7,6 +7,7 @@
 package filesystem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -16,7 +17,7 @@ public class DirectoryNode extends Node{
     
     private ArrayList<Node> childs = new ArrayList<>();
 
-    public DirectoryNode(String pName, int pKey,ArrayList<Integer> pSectors) {
+    public DirectoryNode(String pName, int pKey, List<Integer> pSectors) {
         super(pName, pKey, pSectors);
 
     }

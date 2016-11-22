@@ -7,6 +7,7 @@
 package filesystem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -16,9 +17,9 @@ public class Node {
     
     private String name;
     private int key;
-    private ArrayList<Integer> sectors ;
+    private List<Integer> sectors ;
 
-    public Node(String pName, int pKey, ArrayList<Integer> pSectors) {
+    public Node(String pName, int pKey, List<Integer> pSectors) {
         this.name = pName;
         this.key = pKey;
         this.sectors = pSectors;
@@ -40,11 +41,11 @@ public class Node {
         this.key = key;
     }
 
-    public ArrayList getSectors() {
+    public List<Integer> getSectors() {
         return sectors;
     }
 
-    public void setSector(ArrayList<Integer> sectors) {
+    public void setSectors(List<Integer> sectors) {
         this.sectors = sectors;
     }
 }
